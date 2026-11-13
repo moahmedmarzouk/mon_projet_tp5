@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous / Inscrivez-vous</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body id="a">
+    <header>
+        <h1>Contactez-nous / Inscrivez-vous</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a_propos.html">apropos</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="contact.html.html">contact</a></li>
+            <li><a href="produit.html">produit</a></li>
+        </ul>
+        <main>
+            <form action="#" method="post">
+                
+                <fieldset>
+                    <legend>vos cordonnees</legend>
+                </fieldset>
+                    <label for="nom">Nom* :</label>
+                    <input type="text" id="nom" name="nom" required autofocus maxlength="50" placeholder="Votre nom"><br><br>
+                    <label for="prenom">Prénom* :</label>
+                    <input type="text" id="prenom" name="prenom" required maxlength="50" placeholder="Votre prénom">   <br><br>
+                    <label for="ddn">Date de naissance :</label>
+                    <input type="date" id="ddn" name="ddn"><br><br>
+                    <label for="email">Adresse email* :</label>
+                    <input type="email" id="email" name="email" required placeholder="exemple@email.com">    <br><br>        
+                    <label for="site">Site web :</label>
+                    <input type="url" id="site" name="site" value="http://www." placeholder="https://monsite.com"><br><br>
+                    <label for="password">Code secret :</label>
+                    <input type="password" id="password" name="password" minlength="6" maxlength="20"><br><br>
+                    <label>Genre :</label>
+                    <input type="radio" id="homme" name="genre" value="Homme" checked><br><br>
+                    <label for="homme">Homme</label>
+                    <input type="radio" id="femme" name="genre" value="Femme"><br><br>
+                    <label for="femme">Femme</label>
+                        <label for="pays">Pays :</label>
+                        <select id="pays" name="pays">
+                            <option value="Tunisie">Tunisie</option>
+                            <option value="France">France</option>
+                            <option value="Algerie">Algérie</option>
+                            <option value="Maroc">Maroc</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>2 – Informations complementaires</legend>
+    
+                        <label for="telephone">Téléphone :</label>
+                        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" placeholder="12345678"><br><br>
+    
+                    
+                        <label for="adresse">Adresse postale :</label>
+                        <input type="text" id="adresse" name="adresse" placeholder="Votre adresse"><br><br>
+                    
+    
+                    
+                        <label for="cp">Code postal :</label>
+                        <input type="text" id="cp" name="cp" value="1000" maxlength="4"><br><br>
+                    
+    
+                    
+                        <label for="semestre">Semestre :</label>
+                        <select id="semestre" name="semestre">
+                            <option value="S1">S1</option>
+                            <option value="S2">S2</option>
+                            <option value="S3">S3</option>
+                            <option value="S4">S4</option>
+                        </select>
+                    <select name="region prefere" id="region prefere">
+                    <option value="tu">tunis</option>
+                    <option value="s">sousse</option>
+                    <option value="sf">sfax</option>
+                    <option value="d">djerba</option>
+                    <option value="t">tozer</option>
+                </select>
+                </fieldset>
+                <fieldset>
+                    <legend>3 – Gouts et centres</legend>
+                        <label>Centres d’interet :</label>
+                        <input type="checkbox" id="culture" name="interets" value="Culture">
+                        <label for="culture">Culture</label>
+                        
+                        <input type="checkbox" id="gastronomie" name="interets" value="Gastronomie">
+                        <label for="gastronomie">Gastronomie</label>
+                        
+                        <input type="checkbox" id="plage" name="interets" value="Plage">
+                        <label for="plage">Plage</label>
+                        <input type="range" min="0" max="100" step="10">
+                        <label for="nds">note de satisfaction</label>
+                        <input type="number" min="1" max="10" step="1">
+                        <label for="">message/commantaire</label>
+                        <textarea name="texa" id="ta" cols="40" rows="5"></textarea>
+                        <fieldset>
+                            <legend>4 – Photo</legend>
+                            <div>
+                                <label for="photo">Photo de profil :</label>
+                                <input type="file" id="photo" name="photo" accept="image/*">
+                            </div>
+                        </fieldset>
+                            <input type="submit" value="Envoyer">
+                            <input type="reset" value="Effacer">
+                        </div>
+                </fieldset>
+                <a href="index.html">retour a l'accueil</a>
+                <footer><a href="index.html">index.html</a></footer>
+    
+</body>
+</html>
